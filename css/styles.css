@@ -314,6 +314,7 @@ body {
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 30px;
+
 }
 
 .some .link {
@@ -425,12 +426,16 @@ body {
 
   margin-top: 0;
   margin-bottom: 50px;
+
+  
 }
 
 .clients.list {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  outline: 1px solid green;
 }
 
 .clients .link {
