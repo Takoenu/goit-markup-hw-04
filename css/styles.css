@@ -6,6 +6,7 @@
   --main-background-color: #ffffff;
   --secondary-background-color: #2f303a;
   --footer-text-color: #ffffff60;
+  --footer-icons-background: #ffffff10;
   --white-color: #ffffff;
   --button-background-color: #f5f4fa;
   --header-bottom-line: #ececec;
@@ -314,7 +315,6 @@ body {
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 30px;
-
 }
 
 .some .link {
@@ -426,16 +426,12 @@ body {
 
   margin-top: 0;
   margin-bottom: 50px;
-
-  
 }
 
 .clients.list {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  outline: 1px solid green;
 }
 
 .clients .link {
@@ -448,6 +444,9 @@ body {
   border-radius: 4px;
 
   padding: 16px 32px;
+
+  width: 170px;
+  height: 92px;
 }
 
 .clients .link:hover,
@@ -503,6 +502,12 @@ body {
 
 .gallery .item:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+.gallery .item:hover,
+.gallery .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .gallery-img {
@@ -563,6 +568,64 @@ body {
 }
 
 /* FOOTER */
+
+.footer-info {
+  display: flex;
+}
+
+.some-right {
+  margin-left: 70px;
+}
+
+.some-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.some-footer .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-background-color);
+  background-color: var(--footer-icons-background);
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.some-footer .link:hover,
+.some-footer .link:focus {
+  color: var(--main-background-color);
+  background-color: var(--accent-color);
+}
+
+.instagram-footer,
+.twitter-footer,
+.facebook-footer,
+.linkdin-footer {
+  fill: currentColor;
+}
+
+.footer-item {
+  margin-right: 10px;
+}
+
+.footer-item:last-child {
+  margin-right: 0px;
+}
+
+.social-cta {
+  margin-top: 14px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 
 .footer-section {
   background-color: var(--secondary-background-color);
